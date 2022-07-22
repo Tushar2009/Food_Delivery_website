@@ -1,0 +1,203 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display:flex;
+    width:100%;
+    align-items:center;
+    position:fixed;
+    margin:-24px 0px;
+}
+/* Navigation Bar:Logo and image */
+#logo{
+    margin:18px 34px;
+}
+#logo img{
+    height: 60px;
+    margin:26px 6px;
+}
+/* Navigation Bar:List styling */
+#navbar ul{
+    display:flex;
+    font-family: 'Supermercado One', cursive;
+}
+#navbar::before{
+    content:"";
+    background-color:black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:60%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none; /* to remove the dots of list */
+    font-style: 1.3rem;
+}
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration: none; /* to remove the underline */
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+/* Home section */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:2px 200px;
+    height:550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background:url('../bg1.jpg') no-repeat center center/cover;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:90%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color:white;
+    text-align:center;
+    font-family: 'Quintessential', cursive;
+}
+#home p{
+    color:white;
+    text-align:center;
+    font-size: 1.5rem;
+    font-family: 'Quintessential', cursive;
+}
+/* services section */
+#services{
+    margin:34px;
+    display:flex;
+    background-color: rgb(243, 207, 166);
+}
+#services .box{
+  
+    padding:34px;
+    margin:25px 6px;
+    margin-bottom:25px;
+}
+#services .box img{
+   height:92px;
+   margin:auto;
+   display:block;
+}
+#services .box p{
+    font-family: 'Quintessential', cursive;
+}
+/* client-section */
+#client-section{
+     position:relative;
+}
+#client-section::before{
+    content:"";
+    position:absolute;
+    background: url('../bg.jpg');
+    width:100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+#clients img{
+   height:124px;
+
+}
+.client-item{
+    padding:34px;
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../contact.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#contact-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Quintessential', cursive;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius:9px;
+    font-size: 1.1rem;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+
+
+
+/* Utility-class */
+.h-primary{
+    font-family: 'Quintessential', cursive;
+    font-size: 3.8rem;
+    padding:12px;
+}
+.h-secondary{
+    font-family: 'Quintessential', cursive;
+    font-size: 2.3rem;
+    padding:12px;
+}
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color:brown;
+    color:white;
+    margin:17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.center{
+    text-align:center;
+}
